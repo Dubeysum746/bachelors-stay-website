@@ -3,22 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <title>Bachelor's Stay</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: #243447;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .rooms {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .contact {
+            background: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .contact a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 20px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        footer {
+            background: #243447;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
 <body>
 
+<header>
     <h1>Bachelor's Stay</h1>
     <p>Best rooms for bachelors</p>
+</header>
+
+<section>
+    <h2>Available Rooms</h2>
 
     <div class="rooms">
-        <img src="images/room1.jpg" alt="Room 1">
-        <img src="images/room2.jpg" alt="Room 2">
-        <img src="images/room3.jpg" alt="Room 3">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
+            <div class="card-content">
+                <h3>Single Room</h3>
+                <p>Furnished room with bed, cupboard & fan.</p>
+                <p class="price">₹6,000 / month</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c">
+            <div class="card-content">
+                <h3>Shared Room</h3>
+                <p>Budget friendly shared room for students.</p>
+                <p class="price">₹3,500 / month</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7">
+            <div class="card-content">
+                <h3>Premium Room</h3>
+                <p>AC room with attached washroom.</p>
+                <p class="price">₹9,000 / month</p>
+            </div>
+        </div>
+
     </div>
+</section>
+
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p>Call / WhatsApp for booking</p>
+    <a href="https://wa.me/919999999999" target="_blank">📞 WhatsApp Now</a>
+</section>
+
+<footer>
+    <p>© 2026 Bachelor's Stay | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
+
 
 
 
