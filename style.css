@@ -97,5 +97,9 @@ p {
 .btn:hover {
   background-color: #1ebe5d;
 }
+.contact {
+  text-align: center;
+  padding: 40px;
+}
 
 
